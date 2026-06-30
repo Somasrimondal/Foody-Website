@@ -1,0 +1,1576 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+section{
+  width: 100%;
+}
+.navbar{
+    min-height: 8rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 25px;
+}
+.navbar h1{
+    padding-left: 100px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 70px;
+}
+#topic{
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    gap: 6rem;
+  
+    
+}
+#topic a{
+      text-decoration: none;
+      color: white;
+}
+#oth{
+    display: flex;
+    gap: 6rem;
+    padding-right: 5rem;
+
+}
+.home{
+     width: 100%;
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 100px;
+    justify-content: flex-start;
+}
+.menu-icon{
+  display: none;
+  cursor: pointer;
+}
+
+#food {
+ 
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  z-index: 10;
+  padding-left: 200px;
+  padding-right: 120px;
+  font-size: 50px;
+}
+
+#food span {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.5rem;
+  color: #ffffff;
+  letter-spacing: 1px;
+  
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  opacity: 0.8;
+}
+
+
+
+#home-about {
+  font-size: 2 rem;
+  padding-right: 40px;
+  max-width: 700px;
+  margin-left: 30px;
+}
+
+#home-about h1 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.8rem;
+  font-weight: 400;
+  margin-bottom: 10px;
+  
+  color: #ffffff;
+}
+#home-about img{
+    flex: 2;
+    max-height: 70px;
+    width: 70px;
+    margin-bottom: 20px;
+}
+/* "The key to fine dining" text */
+#home-about h2{
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 8rem;
+  font-weight: 100;
+  color: #dcca87; 
+  line-height: 1.15;
+  margin-bottom: 25px;
+  gap: 1px;
+}
+
+#home-about p {
+  color: #aaaaaa;
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+#home-about button{
+    height: 80px;
+    width: 150px;
+     background-color: #dcca87;
+      border-radius: 10%; 
+
+    margin-top: 30px;
+    font-size: 1.3rem;
+
+}
+
+
+.image {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+
+  padding: 25px; 
+}
+
+
+.image img {
+  display: block;
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+   position: relative; 
+  z-index: 5; 
+  right: 28%;
+  flex: 2;
+}
+
+
+.top-right, .bottom-left {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  z-index: 1;
+}
+
+
+.top-right {
+ background-color:#dcca87 ;
+  top: 0;
+  right: 27%;
+}
+
+
+.bottom-left {
+  background-color: #dcca87; 
+  bottom: 0;
+  left: 18.5%; 
+}
+
+.knife{
+    
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    
+    /* max-width: 2000px; */
+    width: 100%;
+    min-height: 100vh;
+    padding: 40px;
+    gap: 30px;
+   
+
+}
+#about{
+    justify-self: end; 
+     text-align: right; 
+    width: 100%;
+    max-width: 700px;
+    padding-left: 20px;
+    font-size: 30px;
+   
+}
+#hist{
+    justify-self: start; 
+    text-align: left; 
+    width: 100%;
+    max-width: 700px;
+    font-size: 30px;
+}
+.title{
+  color: #dcca87;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.line{
+  font-size: 20px;
+  gap: 15px;
+  padding-top: 55px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgba(217, 210, 230, 0.774);
+  padding-bottom: 40px;
+}
+#knife-img{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 200px;
+}
+
+.watermark{
+  position: absolute;
+  font-size: 35rem;
+  
+  color: rgba(217, 210, 210, 0.211);
+  font-weight: bold;
+  z-index: 1;
+  pointer-events: none;
+  user-select: none;
+}
+.knife button{
+  height: 70px;
+  width: 150px;
+  font-size: 20px;
+  background-color: #dcca87;
+
+}
+.spoon{
+  height: 20px;
+  width: 60px;
+ 
+}
+ .rotate{
+  transform: rotate(180deg);
+   
+} 
+.mid-img{
+  
+height: 600px;
+ width: 200px; 
+ object-fit: contain;
+ z-index: 2; 
+} 
+/* section menu */
+.menu{
+  
+  width: 100%;
+  max-width: 1800px;
+  margin: 0 auto;
+  padding: 0 20px;
+  
+  /* display: flex;
+  align-items: flex-start;
+  justify-content: center; */
+}
+.menu-header{
+  text-align: center;
+   margin-top: 2px; 
+ 
+}
+.menu-header p{
+  font-size: 25px;
+  font-style: italic;
+  letter-spacing: 1px;
+  
+}
+
+.menu-header img{
+  height: 100px;
+  width: 60px;
+}
+.menu-header h2{
+  color: #dcca87;
+  font-size: 70px;
+  letter-spacing: 2px;
+  font-style: italic;
+  font-weight: 400;
+}
+.menu-container{
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1.5fr;
+  gap: 80px;
+  align-items: start;
+   margin-top: 100px;
+  flex-grow: 1;  
+  width: 100%;
+  padding-bottom: 250px;
+  justify-content: start;
+}
+.menu-column{
+  max-height: 100%;
+ padding-right: 10px;
+  /* margin-bottom: 10px; */
+  gap: 40px;
+}
+.menu-column h3{
+  margin-bottom: 30px;
+  font-size: 35px;
+  letter-spacing: 1px;
+  text-align: center;
+  font-style: italic;
+  font-weight: 600;
+}
+.menu-list{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.menu-list li{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  font-size: 100px;
+  font-weight: 600;
+  width: 100%;
+  
+}
+.item-info{
+  display: flex;
+  flex-direction: column;
+  max-width: 60%;
+  font-size: 30px;
+  flex-shrink: 0;
+  width: 200px;
+}
+.item-name{
+  color: #dcca87;
+  font-size: 30px;
+  letter-spacing: 0.5px;
+  white-space: nowrap;
+  
+}
+.item-sub{
+  color: #aaaaaa;
+  font-size: 20px;
+  margin-top: 5px;
+  white-space: nowrap;
+}
+.divider{
+  flex-grow: 1;
+  height: 2px;
+  background-color: white;
+  margin:  0 60px;
+  
+  align-self: center;
+}
+.item-price{
+  color: #ffffff;
+  font-size: 30px;
+  flex-shrink: 0;
+  width: 70px;
+  text-align: right;
+}
+.menu-image{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu-image img{
+  max-width: 100%;
+  height: auto;
+  max-width: 400px;
+  object-fit: contain;
+   /* margin-right: 70px;
+  margin-left: 90px; */
+}
+
+.chef{
+  width: 100%;
+  display: grid;
+  
+  align-items: center; 
+  grid-template-columns: 1fr 1.3fr;
+  gap: 80px;
+  padding-bottom: 60px;
+}
+.image-chef {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  padding: 50px; /* Box layers padding gap maintain korbe */
+}
+
+/* Actual Food Image */
+.image-chef img {
+  display: block;
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  position: relative;
+  z-index: 5; /* Lines gulo niche thakbe, chobi upore */
+  right: 10%;
+  flex: 2;
+}
+.top-right-chef, .bottom-left-chef {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  z-index: 1;
+}
+
+/* Top-Right Border Outline Frame */
+.top-right-chef {
+ background-color:#dcca87 ;
+  top: 3%;
+  right: 11%;
+}
+
+/* Bottom-Left Solid Background Box */
+.bottom-left-chef {
+  background-color: #dcca87; /* Image er pichone solid color frame block */
+  bottom: 3%;
+  left: 19.6%; /* Image container position matrix adjust korbe */
+}
+.intro-chef{
+  max-width:750px ;
+  max-height: 800px;
+  padding-bottom: 50px;
+}
+.sub-head{
+  font-size: 30px;
+}
+.intro-chef h2{
+  font-size: 60px;
+  color: #dcca87;
+  font-style: italic;
+  margin-bottom: 70px;
+}
+.spoon-chef{
+  height: 60px;
+  width: 60px;
+}
+.para-chef{
+  font-size: 20px;
+  gap: 10px;
+  letter-spacing: 1px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: #aaaaaa;
+  margin-bottom: 70px;
+  
+
+}
+.intro-chef h4{
+  font-size: 40px;
+  color: #dcca87;
+  font-style: italic;
+  font-weight: 5;
+  margin-bottom: 130px;
+}
+.video-window {
+    position: relative;
+    width: 100%;  /* Tomar icha moto size set koro */
+    height: 1000px;
+    border: 5px solid #333; /* Window-er border */
+    overflow: hidden;
+    margin: 50px auto; /* Center alignment */
+}
+.video-window video{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  
+}
+.awards {
+    
+    color: #ffffff;
+    padding: 80px 40px;
+    font-family: 'Cormorant Garamond', serif; 
+    padding-bottom: 150px;
+    
+}
+.laurels-container {
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 70px;
+    margin-bottom: 70px;
+}
+
+
+.laurels-left {
+    flex: 1.2;
+    max-width: 1800px;
+    /* padding-left: 60px; */
+  margin-left: 150px;
+}
+
+.section-subtitle {
+    font-size: 1.8rem;
+    font-style: italic; 
+    text-transform: capitalize;
+    margin-bottom: 5px;
+}
+
+.section-title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 40px;
+    color: #dcca87;
+    margin-bottom: 80px;
+    padding-bottom: 10px;
+}
+.lau-spoon{
+  height: 80px;
+  width: 70px;
+}
+
+/* 2x2 Grid for Awards */
+.awards-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 60px 60px;
+    padding-right: 80px; 
+}
+
+.award-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+
+ .award-icon {
+    min-width: 80px;
+    height: 80px;
+    border: 2px  solid white; 
+   background-color: white;
+   filter: invert(1);
+   
+} 
+
+.award-icon .number {
+    font-size: 5rem;
+    font-weight: bold;
+    color: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-56%,-56%);
+}
+
+/* Award Descriptions */
+.award-text h3 {
+    font-size: 1.8rem;
+    color: #dcca87;
+    margin-bottom: 5px;
+}
+
+.award-text p {
+    font-size: 1.3rem;
+    color: #b0c0cb;
+    line-height: 1.4;
+}
+
+/* Right Side Image & Big Letter 'S' Overlay */
+.laurels-right {
+    flex: 0.8;
+    position: relative;
+    margin-left: 60px;
+    width: 40%;
+}
+
+.image-wrapper {
+    position: relative;
+    border-radius: 8px;
+    overflow: visible;
+    /* max-width: 600px;
+    max-height: 700px; */
+}
+
+.image-wrapper img {
+    width: 100%;
+    height: auto;
+    display: block;
+  
+    max-width: 600px;
+    max-height: 800px;
+}
+
+/* Decorative Big Floating Letter 'S' */
+.bg-letter {
+    position: absolute;
+    left: -90px;
+    top: 50%;
+    font-size: 60rem;
+    color: rgba(255, 255, 255, 0.425); /* Translucent opaque white look */
+    font-weight: bold;
+    pointer-events: none;
+    line-height: 0;
+}
+.photo-galary{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 800px;
+ 
+  flex: 2;
+}
+.insta{
+  margin-left: 100px;
+  width: 500px;
+}
+.insta h5{
+  font-size: 40px;
+ letter-spacing: 1px;
+  font-weight: 400;
+}
+.insta img{
+  width: 50px;
+  height: 20px;
+  font-weight: bold;
+}
+.insta h3{
+   
+    color: #dcca87;
+    font-size: 70px;
+    font-weight: 400;
+}
+.insta p{
+  margin-top: 70px;
+  font-size: 24px;
+  gap: 2px;
+  letter-spacing: .5px;
+  color: #b0c0cb;
+}
+.insta button{
+  margin-top: 50px;
+  width: 170px;
+  height: 70px;
+  background-color: #dcca87;
+  font-size: 25px;
+}
+.photo{
+  
+   margin-right: 40px;
+   gap: 20px;
+}
+.photo img{
+  height: 500px;
+  width: 350px;
+  border: 4px solid #f2bf06;
+  background-color: transparent;
+  object-fit: cover;
+  margin-left: 30px;
+}
+.contact{
+  width: 100%;
+ max-height:  1600px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  justify-content: space-around;
+  align-items: center;
+  padding-bottom: 200px;
+}
+
+.find{
+  margin-left: 300px;
+  width: 500px;
+}
+.find h5{
+  font-size: 40px;
+font-style: italic;
+  font-weight: 400;
+}
+.find img{
+  width: 50px;
+  height: 20px;
+  font-weight: bold;
+}
+.find h3{
+    font-style: italic;
+    color: #dcca87;
+    font-size: 70px;
+    font-weight: 600;
+}
+.find .para{
+  margin-top: 70px;
+  font-size: 24px;
+
+  letter-spacing: .5px;
+  color: #b0c0cb;
+}
+.opening{
+  margin-top: 50px;
+}
+.opening h4{
+  font-size: 30px;
+  color: #dcca87;
+   font-weight: 60; 
+  letter-spacing: .5px;
+  font-style: italic;
+}
+.opening p{
+  font-size: 20px;
+ color: rgb(211, 206, 206);
+ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin-top: 20px;
+  font-weight: -0.50;
+  
+}
+.find button{
+  margin-top: 50px;
+  width: 170px;
+  height: 70px;
+  background-color: #dcca87;
+  font-size: 25px;
+}
+.image {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  padding: 25px; /* Box layers padding gap maintain korbe */
+}
+
+/* Actual Food Image */
+.image img {
+  display: block;
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  position: relative;
+  z-index: 5; /* Lines gulo niche thakbe, chobi upore */
+  right: 28%;
+  flex: 2;
+}
+
+/* Golden Box Base Class */
+.top-right, .bottom-left-find {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  z-index: 1;
+}
+
+/* Top-Right Border Outline Frame */
+.top-right {
+ background-color:#dcca87 ;
+  top: 0;
+  right: 27%;
+}
+
+/* Bottom-Left Solid Background Box */
+.bottom-left-find {
+  background-color: #dcca87; /* Image er pichone solid color frame block */
+  bottom: 0;
+  left: 14.6%; /* Image container position matrix adjust korbe */
+}
+.newslatter {
+    padding: 60px 20px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 150px;
+}
+
+/* Newsletter Styles */
+.box {
+    border: 2px solid #f2bf06; /* Thin gold/copper tint border */
+    padding: 40px 60px;
+    text-align: center;
+    max-width: 1300px;
+    width: 100%;
+    height: 420px;
+    
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.5);
+    margin-bottom: 120px;
+}
+
+.news-sub {
+    font-size: 2rem;
+    color: #ffffff;
+    margin-bottom: 5px;
+    font-style: italic;
+    
+}
+.box img{
+  height: 40px;
+  width: 50px;
+}
+.box h2 {
+    font-size: 2.2rem;
+    color: #dcca87;
+    font-weight: 400;
+    margin-bottom: 35px;
+    font-size: 60px;
+    font-style: italic;
+    letter-spacing: 1px;
+}
+
+.box p {
+    color: white;
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+   
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.newslatter p{
+  font-size: 40px;
+}
+
+.newstar-form {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.newstar-form input {
+    flex: 1;
+    background: transparent;
+    border: 2px solid white;
+    padding: 12px 15px;
+    color: #fff;
+    font-size: 1.9rem;
+    outline: none;
+    width: 800px;
+    height: 60px;
+}
+
+.newstar-form button {
+    background-color:#dcca87;
+    color: #000;
+    border: none;
+    padding: 12px 25px;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: 40;
+    transition: background 0.3s;
+}
+
+
+
+/* Footer Content Layout */
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1500px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+    gap: 40px;
+
+}
+
+.footer-column {
+    flex: 1;
+}
+
+.footer-column h3 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    font-weight: 400;
+    letter-spacing: .5px;
+    color: #bfb592;
+}
+.footer-column .address{
+    color: #bbbbbb;
+    font-size: 1.6rem;
+    line-height: 1.8;
+    margin-bottom: 5px;
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+  
+
+}
+.footer-column p{
+   color: #bbbbbb;
+    font-size: 1.6rem;
+    line-height: 1.8;
+    margin-bottom: 5px;
+}
+.logo .brand {
+    font-size: 4.2rem;
+    color: #dcca87;
+    margin-bottom: 10px;
+    font-weight: bold;
+   
+}
+
+.logo .quote {
+   font-size: 1.6rem;
+    color: #cccccc;
+    margin-bottom: 20px;
+    padding: 10 2px;
+  
+}
+.logo img{
+  width: 58px;
+  margin-bottom: 10px;
+}
+.social-icon i {
+    color: #ffffff;
+    font-size:  2rem;
+    margin: 0 5px;
+    transition: color 0.3s;
+}
+
+
+
+.day h2 {
+    font-weight: 40;
+    margin-top: 10px;
+    color: #bfb592;
+    font-size: 1.8rem;
+    margin-bottom: 40px;
+}
+
+
+
+.day p {
+    color:#bbbbbb;
+    font-size: 1.8rem;
+    /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+}
+@media (max-width:768px){
+  .navbar{
+  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    box-sizing: border-box;
+    min-height: auto;
+    padding: 15px 20px;
+    
+  }
+  .navbar h1{
+    font-size: 40px;
+    padding: 0;
+  }
+  .menu-icon{
+    display: block;
+    font-size: 30px;
+    cursor: pointer;
+  }
+  
+  #topic{
+    display: none;
+  }
+  .mobile-menu{
+    display: none;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+   
+}
+
+.mobile-menu a{
+    display: block;
+    text-align: right;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+   
+}
+
+
+  #oth{
+    display: none;
+  }
+   .home{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin-top: 50px;
+   max-width: 100%;
+  padding: 20px;
+   
+  }
+  #home-about h1{
+    margin-top: -180px;
+    font-size: 18px;
+  }
+  #food{
+    padding: 0;
+    font-size: 10px;
+  margin-right: auto;
+  padding-left: 12px;
+  padding-top: 30px;
+  }
+  #food span{
+    font-size:13px;
+  }
+  #home-about h2{
+    margin-top: -15px;
+    font-size: 2rem;
+  }
+  #home-about img{
+    width: 45px;
+    max-height: 30px;
+  }
+ #home-about p{
+  font-size: 16px;
+  line-height: 1rem;
+ }
+ #home-about button{
+  max-height: 40px;
+  max-width: 100px;
+  font-size: .85rem;
+  margin-bottom: 40px;
+ }
+  
+  .image img{
+     max-width: 90%;
+    right: 0;
+  }
+    .top-right,.bottom-left{
+    width: 160px;
+    height: 160px;
+   position: absolute;
+  } 
+     .top-right{
+    
+    left: 51%;
+    top: 3%;
+     
+  }
+  .bottom-left{
+   left: 12%;
+   bottom: 3%;
+  }   
+  .knife{
+    max-width: 400px;
+    font-size: 20px;
+     display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    gap: 0px;
+  padding: 0;
+    margin: 0;
+    
+  }
+  #about{
+    max-width: 180px;
+    align-items: center;
+  }
+  #about button{
+   max-width: 60px;
+    max-height: 50px;
+    font-size: 10px;
+  }
+  .title{
+    font-size: 18px;
+  }
+  .spoon{
+   max-height: 20px;
+   width: 40px;
+  }
+  .line{
+    font-size: 12px;
+    width: 100%;
+  }
+  .mid-img{
+    max-height: 300px;
+    max-width: 100px;
+  }
+  #knife-img{
+    max-width: 10px;
+    padding: 0;
+    margin: 0;
+    margin-left: -25px;
+
+  }
+  #hist{
+    width: 100%;
+     max-width: 200px;
+    align-items: center;
+    padding-right: 10px;
+    margin-left: -20px;
+  }
+  #hist button{
+    max-width: 60px;
+    max-height: 50px;
+    font-size: 10px;
+  }
+   .watermark{
+    font-size: 12rem;
+    z-index: 1;
+  } 
+   .menu{
+    width: 100%;
+    padding: 20px;
+  }
+  .menu-header{
+    text-align: center;
+  }
+  .menu-header p{
+    font-size: 20px;
+    padding-top: 20px;
+  }
+ 
+  .menu-header img{
+  width: 40px;
+  padding-bottom: 40px;
+  height: auto;
+  }
+  .menu-header h2{
+    font-size: 30px;
+    text-align: center;
+  }
+  .menu-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    margin-top: 50px;
+    padding-bottom: 60px;
+    
+  }
+  .menu-column
+  {
+    width: 100%;
+    max-width: 400px;
+  }
+  .menu-column h3{
+    font-size: 29px;
+  }
+   .menu-list li{
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 25px;
+  }
+  .item-info{
+    width: auto;
+    
+  }
+ 
+  .item-name{
+    font-size: 20px;
+    white-space: normal;
+    font-size: 400;
+  }
+  .item-sub{
+     font-size: 13px; 
+     white-space: normal;
+  }
+  .divider{
+    height: 2px;
+    flex: 1;
+    margin: 10 20px;
+  }
+
+  .item-price{
+    font-size: 16px;
+    /* margin-left: -100px;
+    padding-right: 90px; */
+    width: auto;
+  }
+   .chef{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+    padding: 20px;
+  }
+  .intro-chef h2{
+    font-size: 40px;
+  }
+  .divider{
+ max-width: 30px;
+   margin-left: 20px;
+  }
+   .menu-image{
+   width: 100%;
+   max-width: 300px;
+   padding-left: 20px;
+   justify-content: center;
+  } 
+   .photo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .photo img{
+    width: 90%;
+    height: auto;
+    margin: 10px 0;
+    text-align:  center;
+  }
+  .image-chef{
+    justify-content: center;
+  padding: 20px;
+  }
+  .image-chef img{
+    width: 90%;
+    max-width: 330px;
+    right:0;
+  }
+  .top-right-chef,.bottom-left-chef{
+     width: 190px;
+    height: 190px;
+   position: absolute; 
+  }
+  .top-right-chef{
+   left: 39%;
+    top: 2%;
+  }
+  .bottom-left-chef{
+     left: 1.7%;
+   bottom: 1%;
+  }
+  .intro-chef{
+    max-width: 100%;
+    text-align: center;
+    font-weight: 20px;
+     padding: 0;
+  }
+  .intro-chef h2{
+    font-size: 35px;
+    margin: 15px 0 30px;
+  }
+  .sub-head{
+    font-size: 18px;
+  }
+  .spoon-chef{
+    max-width: 45px;
+    padding-bottom: 40px;
+  }
+  .para-chef{
+    font-size: 15px;
+    margin-bottom: 35px;
+   
+  }
+  .intro-chef h4{
+    margin-top: -25px;
+    font-size: 25px;
+  }
+  .video-window{
+    width: 100%;
+    height: 260px;
+    margin: 40px auto;
+  
+    /* max-height: auto; */
+    /* text-align: center;
+    display: flex;
+    flex-direction: row; */
+  }
+  .video-window video{
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+  }
+  .awards{
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    max-width: 100%;
+    text-align: center; */
+    padding: 40px 20px;
+  }
+ .laurels-container{
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  text-align: center;
+
+ }
+ .laurels-left{
+  margin: 0;
+  max-width: 100%;
+  
+ }
+ .section-subtitle{
+  font-size: 18px;
+ }
+ .section-title{
+ margin-bottom:30px;
+  font-size: 35px;
+ }
+
+  .awards-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding: 0;
+  }
+  .laurels-right{
+    width: 100%;
+    margin: 0;
+  }
+  .image-wrapper{
+    display: contents;
+    justify-content: center;
+  }
+  .image-wrapper img{
+    width: 280px;
+  }
+  .bg-letter{
+    font-size: 14rem;
+    left: 0;
+  }
+  .award-text h3{
+    font-size: 22px;
+  }
+  .award-text p{
+    font-size: 15px;
+  }
+  .award-icon{
+    width: 60px;
+    height: 60px;
+  }
+  .award-icon img{
+    width: 100%;
+  }
+  .award-icon .number{
+    font-size: 3rem;
+  }
+
+  .photo-galary{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    padding: 40px 20px;
+    gap: 40px;
+  }
+  
+  .insta{
+    width: 100%;
+    margin: 0;
+    text-align: center;
+  }
+  .insta h5{
+    font-size: 20px;
+  }
+
+   .insta h3 {
+    font-size: 2rem;
+  }
+  .insta p{
+    font-size: 1rem;
+  }
+  .insta button{
+    width: 140px;
+    height: 50px;
+    font-size: 16px;
+  }
+  .photo{
+    display: flex;
+    gap: 0;
+    width: 100%;
+    margin: 0;
+    overflow-x: auto;
+   scroll-snap-type: x mandatory;
+scrollbar-width: none;
+    /* scroll-behavior: smooth; */
+  }
+
+  .photo::-webkit-scrollbar {
+            display: none; /* Chrome, Safari এবং Opera এর জন্য */
+        }
+        .photo{
+            -ms-overflow-style: none;  /* IE এবং Edge */
+            scrollbar-width: none;  /* Firefox */
+        } 
+
+        
+        .photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            flex-shrink: 0; 
+           scroll-snap-align: start; 
+            
+        }
+ 
+  .contact{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:40px;
+    padding:40px 20px;
+}
+
+.find{
+    width:100%;
+    margin:0;
+    text-align:center;
+}
+
+.find h5{
+    font-size:20px;
+}
+
+.find h3{
+    font-size:40px;
+}
+
+.find .para{
+    margin-top:20px;
+    font-size:16px;
+}
+
+.opening h4{
+    font-size:22px;
+}
+
+.opening p{
+    font-size:15px;
+}
+
+.find button{
+    width:140px;
+    height:50px;
+    font-size:16px;
+}
+
+.bottom-left-find,
+.top-right{
+    width:150px;
+    height:150px;
+}
+.bottom-left-find{
+  left: 9%;
+}
+.box{
+    width:100%;
+    height:auto;
+    padding:30px 20px;
+}
+
+.news-sub{
+    font-size:20px;
+}
+
+.box h2{
+    font-size:32px;
+}
+
+.box p{
+    font-size:15px;
+}
+.newslatter p{
+  font-size: 18px;
+}
+.newstar-form{
+    flex-direction:column;
+    gap:15px;
+}
+
+.newstar-form input{
+    width:100%;
+    font-size:16px;
+}
+
+.newstar-form button{
+    width:100%;
+    height:50px;
+}
+
+.footer-content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    align-items: center;
+    text-align: center;
+}
+
+
+.logo{
+    grid-column: 1 / 3;
+    grid-row: 1;
+}
+
+  .quote{
+  font-size: 18px;
+  line-height: 1px;
+}
+
+.footer-content .footer-column:first-child{
+    grid-column: 1;
+    grid-row: 2;
+}
+
+
+.day{
+    grid-column: 2;
+    grid-row: 2;
+    font-size: 20px;
+}
+.day p{
+  font-size: 17px;
+  
+  
+}
+.day h2{
+  font-size:18px ;
+  padding-top: 20px;
+  
+}
+.footer-column p{
+  font-size: 15px;
+}
+.footer-column h3{
+  font-size: 22px;
+
+}
+.footer-column .address{
+    width: 100%;
+     max-width: 280px; 
+    margin: auto;
+    font-size: 15px;
+}
+
+.logo .quote{
+    width: 90%;
+    margin: 10px auto 20px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.social-icon{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    font-size: 28px;
+}
+.logo .brand{
+  font-size: 35px;
+}
+.logo img{
+  max-width: 40px;
+}
+
+footer > p{
+    text-align: center;
+    margin-top: 25px;
+}
+
+}
+
+
+
+
+
+html,
+body{
+    overflow-x: hidden;
+    width: 100%;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+section{
+    width: 100%;
+    max-width: 100%;
+}
